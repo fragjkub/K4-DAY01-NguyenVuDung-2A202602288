@@ -38,7 +38,7 @@ Nguồn evidence: `detection_predictions.json` và `visuals/detection_prediction
 - Một record (`class_name`, `score`, `bbox_xyxy`, `bbox_width`, `bbox_height`):
   - Ví dụ: `class_name="person"`, `score=0.912625`, `bbox_xyxy=[385.33, 69.24, 498.92, 348.92]`, `bbox_width=113.58`, `bbox_height=279.68`.
 - Diễn giải vị trí box bằng lời:
-  - Hộp này bắt đầu ở tọa độ x≈385.33, y≈69.24 và kết thúc ở x≈498.92, y≈348.92 trên ảnh có kích thước 640x427 pixel. Với kích thước khoảng 113.58 pixel theo chiều ngang và 279.68 pixel theo chiều dọc, box bao phủ một người ở góc phải của ảnh gần như toàn thân.
+  - Hộp này bắt đầu ở tọa độ x≈385.33, y≈69.24 và kết thúc ở x≈498.92, y≈348.92 trên ảnh có kích thước 640x427 pixel. Với kích thước khoiảng 113.58 pixel theo chiều ngang và 279.68 pixel theo chiều dọc, box bao phủ một người ở góc phải của ảnh gần như toàn thân.
 - So sánh số prediction ở hai threshold:
   - Dữ liệu cho thấy ở ngưỡng 0.35 có 53 prediction trên tất cả các sample; ở ngưỡng 0.5 còn 33 prediction; ở 0.7 chỉ còn 15 prediction. Theo từng sample: `traffic` 26 → 18 → 9, `kitchen` 11 → 6 → 3, `dining` 16 → 9 → 3.
   - Như vậy, tăng threshold làm giảm số box được giữ lại và giảm “nhiễu” nhưng cũng có nguy cơ bỏ sót object yếu.
